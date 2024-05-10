@@ -1,0 +1,24 @@
+{
+  "name": "plex-electron-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "release": "electron-builder --win --x64 --publish=never"
+  },
+  "devDependencies": {
+    "electron": "^30.0.3",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.plex.app",
+    "productName": "Plex",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "icon": "icon.png"
+    }
+  }
+}
